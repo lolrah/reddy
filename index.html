@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -58,6 +58,114 @@
     </div>
   </div>
   <a href="https://m.maploco.com/details/1cb693vs"><img style="border:0px;" src="https://www.maploco.com/vmap/s/10502632.png" alt="Locations of Site Visitors" title="Locations of Site Visitors"/></a>  
+</body>
+</html>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chaitanya Reddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: 'Poppins', sans-serif;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .profile-card {
+      display: flex;
+      background-color: #111;
+      border-radius: 12px;
+      padding: 20px;
+      gap: 20px;
+      align-items: center;
+      border: 1px solid #cccccc66;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    img.profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #555;
+      object-fit: cover;
+    }
+
+    .info h2 {
+      margin: 0;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .info p {
+      font-size: 14px;
+      color: #ccc;
+      margin: 6px 0;
+    }
+
+    a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+
+    /* Visitor map (hidden by default) */
+    .visitors {
+      margin-top: 40px;
+      text-align: center;
+      display: none; /* IMPORTANT */
+    }
+
+    .visitors h3 {
+      font-size: 16px;
+      color: #aaa;
+      margin-bottom: 12px;
+    }
+
+    .visitors img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid #cccccc44;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-card">
+    <img src="dp.jpeg" alt="Profile Picture" class="profile-pic" />
+    <div class="info">
+      <h2>Chaitanya Reddy</h2>
+      <p>I am a Ph.D. student at IIT Hyderabad.</p>
+      <p>Research Interests: Theoretical Computer Science, Communication Complexity.</p>
+      <p>Email: <a href="mailto:CS20RESCH11001@iith.ac.in">CS20RESCH11001@iith.ac.in</a></p>
+    </div>
+  </div>
+
+  <!-- Visitor map (private) -->
+  <div class="visitors" id="visitorsMap">
+    <!-- <h3>Visitor Map (Private)</h3> -->
+    <a href="https://m.maploco.com/details/1cb693vs" target="_blank">
+      <img src="https://www.maploco.com/vmap/s/10502632.png" alt="Visitor Map">
+    </a>
+  </div>
+
+  <script>
+    // Show map ONLY if URL has ?showmap=1
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("showmap") === "1") {
+      document.getElementById("visitorsMap").style.display = "block";
+    }
+  </script>
+
 </body>
 </html>
 
