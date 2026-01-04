@@ -112,10 +112,34 @@
       margin: 6px 0;
     }
 
-    a {
-      color: #66ccff;
-      text-decoration: none;
-    }
+   /* Global links: inherit text color */
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted #888;
+}
+
+/* Hover effect */
+a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* Contact line slightly dimmer */
+
+.contact {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.sep {
+  margin: 0 6px;
+  color: #999;
+}
+
+    .info a {
+  border-bottom: 1px solid #aaa;
+}
 
     /* Visitor map (hidden by default) */
     .visitors {
@@ -142,10 +166,7 @@
   color: #444;
 }
 
-.contact a {
-  color: #2563eb;
-  text-decoration: none;
-}
+
 
 .contact a:hover {
   text-decoration: underline;
@@ -231,6 +252,7 @@
 
 </body>
 </html>
+
 
 
 
