@@ -135,24 +135,33 @@
       border-radius: 10px;
       border: 1px solid #cccccc44;
     }
-    .office {
-  font-size: 0.9rem;
-  margin-top: -8px;
-  margin-bottom: 12px;
-  color: #555;
+    .profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers under the pic */
 }
 
-.office a {
+.office-under-pic {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.office-under-pic a {
   text-decoration: none;
-  background: #f3f4f6;
-  padding: 4px 10px;
-  border-radius: 12px;
-  color: #333;
-  transition: background 0.2s ease;
+  font-size: 0.85rem;
+  color: #555;
+
+  background: transparent;
+  border: 1px solid #ffffff;   /* white border */
+  padding: 4px 12px;
+  border-radius: 14px;
+
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.office a:hover {
-  background: #e5e7eb;
+.office-under-pic a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #000;
 }
   </style>
 </head>
@@ -227,6 +236,7 @@
 
 </body>
 </html>
+
 
 
 
