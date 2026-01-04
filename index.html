@@ -135,34 +135,27 @@
       border-radius: 10px;
       border: 1px solid #cccccc44;
     }
-    .profile-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* centers under the pic */
+
+    /* -- */
+    .contact {
+  font-size: 0.95rem;
+  color: #444;
 }
 
-.office-under-pic {
-  margin-top: 8px;
-  text-align: center;
-}
-
-.office-under-pic a {
+.contact a {
+  color: #2563eb;
   text-decoration: none;
-  font-size: 0.85rem;
-  color: #555;
-
-  background: transparent;
-  border: 1px solid #ffffff;   /* white border */
-  padding: 4px 12px;
-  border-radius: 14px;
-
-  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.office-under-pic a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #000;
+.contact a:hover {
+  text-decoration: underline;
 }
+
+.sep {
+  margin: 0 6px;
+  color: #999;
+}
+
   </style>
 </head>
 
@@ -191,8 +184,19 @@
     </p>
 
     <p>Research Interests: Theoretical Computer Science, Communication Complexity.</p>
-    <p>Email: <a href="mailto:CS20RESCH11001@iith.ac.in">CS20RESCH11001@iith.ac.in</a></p>
-  </div>
+<p class="contact">
+  Email:
+  <a href="mailto:CS20RESCH11001@iith.ac.in">
+    CS20RESCH11001@iith.ac.in
+  </a>
+  <span class="sep">·</span>
+  Office:
+  <a href="https://maps.app.goo.gl/DdR8wx9n5g5gDiXt7"
+     target="_blank"
+     rel="noopener noreferrer">
+    CS320/27
+  </a>
+</p>  </div>
 </div>
 
   <!-- <div class="profile-card">
@@ -237,6 +241,7 @@
 
 </body>
 </html>
+
 
 
 
