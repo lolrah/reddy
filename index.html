@@ -1,237 +1,171 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chaitanya Reddy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #000;
-      color: #f0f0f0;
-      font-family: 'Poppins', sans-serif;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .profile-card {
-      display: flex;
-      background-color: #111;
-      border-radius: 12px;
-      padding: 20px;
-      gap: 20px;
-      align-items: center;
-      border: 1px solid #cccccc66; /* Light translucent border */
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    }
-    img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #555;
-      object-fit: cover;
-    }
-    .info h2 {
-      margin: 0;
-      font-size: 22px;
-      color: #fff;
-    }
-    .info p {
-      font-size: 14px;
-      color: #ccc;
-      margin: 6px 0;
-    }
-    a {
-      color: #66ccff;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="profile-card">
-    <img src="dp.jpeg" alt="Profile Picture" />
-    <div class="info">
-      <h2>Chaitanya Reddy</h2>
-      <p>I am a Ph.D. student at IIT Hyderabad.</p>
-      <p>Research Interests: Theoretical Computer Science, Communication Complexity.</p>
-      <p>Email: <a href="mailto:CS20RESCH11001@iith.ac.in">CS20RESCH11001@iith.ac.in</a></p>
-    </div>
-  </div>
-  <a href="https://m.maploco.com/details/1cb693vs"><img style="border:0px;" src="https://www.maploco.com/vmap/s/10502632.png" alt="Locations of Site Visitors" title="Locations of Site Visitors"/></a>  
-</body>
-</html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chaitanya Reddy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      background-color: #000;
-      color: #f0f0f0;
-      font-family: 'Poppins', sans-serif;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .profile-card {
-      display: flex;
-      background-color: #111;
-      border-radius: 12px;
-      padding: 20px;
-      gap: 20px;
-      align-items: center;
-      border: 1px solid #cccccc66;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    }
-
-    img.profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #555;
-      object-fit: cover;
-    }
-
-    .info h2 {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-size: 22px;
-      color: #fff;
+      padding: 0;
     }
 
-    .info p {
+    body {
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      color: #1f2937;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle Link Styling (Non-Blue) */
+    a {
+      color: #111827;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #9ca3af;
+    }
+
+    a:hover {
+      color: #000000;
+      text-decoration-color: #111827;
+    }
+
+    /* Top Section: Photo + Header Info */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .photo {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .header-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #374151;
+    }
+
+    .email {
       font-size: 14px;
-      color: #ccc;
-      margin: 6px 0;
+      color: #4b5563;
+      margin-top: -4px;
     }
 
-   /* Global links: inherit text color */
-a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px dotted #888;
-}
-
-/* Hover effect */
-/* a:hover {
-  color: #fff;
-  border-bottom-color: #fff;
-} */
-
-/* Contact line slightly dimmer */
-
-.contact {
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-.sep {
-  margin: 0 6px;
-  color: #999;
-}
-
-    /* .info a {
-  border-bottom: 1px solid #aaa;
-} */
-
-    /* Visitor map (hidden by default) */
-    .visitors {
-      margin-top: 40px;
-      text-align: center;
-      display: none; /* IMPORTANT */
+    .previous {
+      color: #6b7280;
+      font-size: 14px;
+      margin-top: 8px;
     }
 
-    .visitors h3 {
+    /* Section Header */
+    h2 {
+      margin: 36px 0 12px;
       font-size: 16px;
-      color: #aaa;
-      margin-bottom: 12px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #111827;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 6px;
     }
 
-    .visitors img {
-      max-width: 100%;
-      border-radius: 10px;
-      border: 1px solid #cccccc44;
+    .work {
+      margin-top: 8px;
     }
 
-    /* -- */
-    .contact {
-  font-size: 0.95rem;
-  color: #444;
-}
+    /* Mobile Responsive */
+    @media (max-width: 520px) {
+      body {
+        margin: 30px auto;
+        padding: 0 16px;
+      }
 
+      .header {
+        gap: 16px;
+      }
 
+      .photo {
+        width: 85px;
+        height: 85px;
+      }
 
-/* .contact a:hover {
-  text-decoration: underline;
-} */
-
-.sep {
-  margin: 0 6px;
-  color: #999;
-}
-
+      h1 {
+        font-size: 22px;
+      }
+    }
   </style>
 </head>
 
 <body>
-<div class="profile-card">
-<img src="dp.jpeg" alt="Profile Picture" class="profile-pic" />
 
-  <div class="info">
-      <h2>Chaitanya Reddy</h2>
-      <p>Hi! I am a Ph.D. student at IIT Hyderabad.</p>
-      <p>Research Interests: Theoretical Computer Science, Communication Complexity.</p>
-      <p>Email: <a href="mailto:CS20RESCH11001@iith.ac.in">CS20RESCH11001@iith.ac.in</a></p>
-  </div>
-  <!-- Visitor map (private) -->
-  <div class="visitors" id="visitorsMap">
-    <!-- <h3>Visitor Map (Private)</h3> -->
-    <a href="https://m.maploco.com/details/1cb693vs" target="_blank">
-      <img src="https://www.maploco.com/vmap/s/10502632.png" alt="Visitor Map">
-    </a>
+  <!-- TOP HEADER: Photo + Name, Bio, and Email -->
+  <div class="header">
+    <img
+      src="dp.jpeg"
+      alt="Chaitanya Reddy"
+      class="photo"
+    >
+
+    <div class="header-info">
+      <h1>Chaitanya Reddy</h1>
+
+      <p>
+        Hi! I am a Ph.D. student at IIT Hyderabad.
+      </p>
+
+      <div class="email">
+        CS20RESCH11001@iith.ac.in
+      </div>
+    </div>
   </div>
 
-  <script>
-    // Show map ONLY if URL has ?showmap=1
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("showmap") === "1") {
-      document.getElementById("visitorsMap").style.display = "block";
-    }
-  </script>
+  <!-- MAIN CONTENT -->
+  <p>
+    My broad research interests are in Theoretical Computer Science.
+    I am currently working on Communication Complexity.
+  </p>
+
+  <p class="previous">
+    <em>Previously: BITS Pilani · Cisco Webex · IIT Dhanbad</em>
+  </p>
+
+  <!-- <h>Recent Work</h2> -->
+
+  <p class="work">
+    <em>
+      Optimal Two-Round Communication Lower Bound for Graph Connectivity
+      via Pointer Chasing
+    </em>,
+    with Jaikumar Radhakrishnan and Rakesh Venkat.
+    <em>ITCS 2026</em>.
+    [<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/LIPIcs.ITCS.2026.110/LIPIcs.ITCS.2026.110.pdf">PDF</a>]
+  </p>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
