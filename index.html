@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Chaitanya Reddy</title>
 
   <style>
@@ -16,7 +19,14 @@
       max-width: 680px;
       margin: 60px auto;
       padding: 0 24px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
       font-size: 15px;
       line-height: 1.65;
       color: #1f2937;
@@ -24,7 +34,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Subtle Link Styling (Non-Blue) */
     a {
       color: #111827;
       font-weight: 500;
@@ -38,7 +47,6 @@
       text-decoration-color: #111827;
     }
 
-    /* Top Section: Photo + Header Info */
     .header {
       display: flex;
       align-items: flex-start;
@@ -55,8 +63,10 @@
     }
 
     .header-info {
+      height: 110px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
     h1 {
@@ -64,42 +74,37 @@
       font-weight: 700;
       letter-spacing: -0.02em;
       color: #111827;
-      margin-bottom: 6px;
     }
 
     p {
-      margin-bottom: 16px;
       color: #374151;
     }
 
     .email {
       font-size: 14px;
       color: #4b5563;
-      margin-top: -4px;
     }
 
     .previous {
-      color: #6b7280;
-      font-size: 14px;
       margin-top: 8px;
+      font-size: 14px;
+      color: #6b7280;
     }
 
-    /* Section Header */
     h2 {
       margin: 36px 0 12px;
+      padding-bottom: 6px;
       font-size: 16px;
       font-weight: 600;
       letter-spacing: -0.01em;
       color: #111827;
       border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
     }
 
     .work {
       margin-top: 8px;
     }
 
-    /* Mobile Responsive */
     @media (max-width: 520px) {
       body {
         margin: 30px auto;
@@ -115,6 +120,10 @@
         height: 85px;
       }
 
+      .header-info {
+        height: 85px;
+      }
+
       h1 {
         font-size: 22px;
       }
@@ -124,8 +133,8 @@
 
 <body>
 
-  <!-- TOP HEADER: Photo + Name, Bio, and Email -->
   <div class="header">
+
     <img
       src="dp.jpeg"
       alt="Chaitanya Reddy"
@@ -133,39 +142,22 @@
     >
 
     <div class="header-info">
+
       <h1>Chaitanya Reddy</h1>
 
-      <p>
-        Hi! I am a Ph.D. student at IIT Hyderabad.
-      </p>
+<p style="font-size: 12px; font-style: italic; color: #6b7280;">
+  Dept. of Computer Science, <br>
+  IIT Hyderabad
+</p>
 
       <div class="email">
         CS20RESCH11001@iith.ac.in
       </div>
+
     </div>
+
   </div>
 
-  <!-- MAIN CONTENT -->
-  <p>
-    My broad research interests are in Theoretical Computer Science.
-    I am currently working on Communication Complexity.
-  </p>
-
-<p class="previous">
-  <em>Previous Affiliations: IIT Dhanbad, Cisco Webex, BITS Pilani</em>
-</p>
-
-  <h2>Publications</h2>
-
-  <p class="work">
-    <em>
-      Optimal Two-Round Communication Lower Bound for Graph Connectivity
-      via Pointer Chasing
-    </em>
-    with Jaikumar Radhakrishnan and Rakesh Venkat.
-    <em>ITCS 2026</em>.
-    [<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/LIPIcs.ITCS.2026.110/LIPIcs.ITCS.2026.110.pdf">PDF</a>]
-  </p>
-
 </body>
+
 </html>
